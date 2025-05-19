@@ -1,0 +1,48 @@
+#form{
+    width: 20vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(116, 153, 147);
+    border: 2px solid black;
+    border-radius: 9px;
+    padding: 40px;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.form__element{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.form__textbox{
+     border-radius: 6px;
+     font-size: 15px;
+}
+ 
+.form__bnt{
+    background-color: aliceblue;
+    width: 150px;
+    height: 40px;
+}
+.form__bnt:hover{
+    transition-duration: 4s;
+    background-color: rgb(172, 172, 172);
+    border-radius: 25%;
+    
+}
+#result-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+}
+.result-box_text{
+    text-align: center;
+    font-size: 18px;
+}
+ 

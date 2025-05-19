@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scriptDom.js"></script>
+</head>
+ 
+<body>
+    <form action="" id="form">
+        <input type="text" name="" id="nomeAluno" placeholder="digite nome do aluno..." class="form__element form__textbox">
+ 
+        <div class="form__element">
+        <label for="nota1"> 1º nota</label>
+        <input type="number" name="" id="nota1" min="0" max="10"
+        class="form__textbox">
+        </div>
+ 
+        <div class="form__element">
+        <label for="nota2"> 2º nota</label>
+        <input type="number" name="" id="nota2" min="0" max="10"
+        class="form__textbox">
+        </div>
+ 
+        <div class="form__element">
+        <label for="nota3"> 3º nota</label>
+        <input type="number" name="" id="nota3" min="0" max="10"
+        class="form__textbox">
+        </div>
+ 
+        <div class="form__element">
+        <label for="nota4">4º nota</label>
+        <input type="number" name="" id="nota4" min="0" max="10"
+        class="form__textbox" >
+        </div>
+ 
+        <input type="button" value="calcular a media" class="form__element form__bnt" onclick="CalcularMedia();">
+
+        <div id="result-box">
+            <p class="result-box_text">Resultado do aluno</p>
+            <input type="text" class="form__textbox" id="mediaAluno">
+            <input type="text" class="form__textbox" id="situacaoAluno">
+        </div>
+    </form>
+</body>
+ 
+</html>
+ 
