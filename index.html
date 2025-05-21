@@ -1,51 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declaração do tipo de documento como HTML5 -->
+<html lang="en"> <!-- Início do documento HTML com o idioma definido como inglês -->
  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./scriptDom.js"></script>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo em dispositivos móveis -->
+    <title>Document</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="./style.css"> Vincula o arquivo CSS externo para estilizar a página
+    <script src="./scriptDom.js"></script> <!-- Vincula o arquivo JavaScript externo para funcionalidades dinâmicas -->
 </head>
  
 <body>
-    <form action="" id="form">
-        <input type="text" name="" id="nomeAluno" placeholder="digite nome do aluno..." class="form__element form__textbox">
+    <form action="" id="form"> <!-- Início do formulário com ID 'form' e sem ação definida -->
+        <input type="text" id="nomeAluno" placeholder="digite nome do aluno..." class="form__element form__textbox"> <!-- Campo de texto para o nome do aluno -->
  
-        <div class="form__element">
-        <label for="nota1"> 1º nota</label>
-        <input type="number" name="" id="nota1" min="0" max="10"
-        class="form__textbox">
+        <div class="form__element"> <!-- Início do bloco para a primeira nota -->
+            <label for="nota1">1º nota</label> <!-- Rótulo para o campo da primeira nota -->
+            <input type="number" id="nota1" min="0" max="10" class="form__textbox"> <!-- Campo numérico para a primeira nota, com valores entre 0 e 10 -->
         </div>
  
-        <div class="form__element">
-        <label for="nota2"> 2º nota</label>
-        <input type="number" name="" id="nota2" min="0" max="10"
-        class="form__textbox">
+        <div class="form__element"> <!-- Início do bloco para a segunda nota -->
+            <label for="nota2">2º nota</label> <!-- Rótulo para o campo da segunda nota -->
+            <input type="number" id="nota2" min="0" max="10" class="form__textbox"> <!-- Campo numérico para a segunda nota, com valores entre 0 e 10 -->
         </div>
  
-        <div class="form__element">
-        <label for="nota3"> 3º nota</label>
-        <input type="number" name="" id="nota3" min="0" max="10"
-        class="form__textbox">
+        <div class="form__element"> <!-- Início do bloco para a terceira nota -->
+            <label for="nota3">3º nota</label> <!-- Rótulo para o campo da terceira nota -->
+            <input type="number" id="nota3" min="0" max="10" class="form__textbox"> <!-- Campo numérico para a terceira nota, com valores entre 0 e 10 -->
         </div>
  
-        <div class="form__element">
-        <label for="nota4">4º nota</label>
-        <input type="number" name="" id="nota4" min="0" max="10"
-        class="form__textbox" >
+        <div class="form__element"> <!-- Início do bloco para a quarta nota -->
+            <label for="nota4">4º nota</label> <!-- Rótulo para o campo da quarta nota -->
+            <input type="number" id="nota4" min="0" max="10" class="form__textbox"> <!-- Campo numérico para a quarta nota, com valores entre 0 e 10 -->
         </div>
  
-        <input type="button" value="calcular a media" class="form__element form__bnt" onclick="CalcularMedia();">
-
-        <div id="result-box">
-            <p class="result-box_text">Resultado do aluno</p>
-            <input type="text" class="form__textbox" id="mediaAluno">
-            <input type="text" class="form__textbox" id="situacaoAluno">
+        <input type="button" value="calcular a media" class="form__element form__bnt" onclick="executarTeste();"> <!-- Botão que chama a função 'CalcularMedia()' ao ser clicado -->
+ 
+        <div id="result-box"> <!-- Início da caixa de resultados -->
+            <p class="result-box_text">Resultado do aluno</p> <!-- Texto informativo sobre os resultados -->
+            <input type="text" class="form__textbox" id="mediaAluno"> <!-- Campo de texto para exibir a média do aluno -->
+            <input type="text" class="form__textbox" id="situacaoAluno"> <!-- Campo de texto para exibir a situação do aluno (aprovado, reprovado, etc.) -->
         </div>
     </form>
 </body>
  
 </html>
- 

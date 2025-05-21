@@ -3,9 +3,9 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(116, 153, 147);
+    background-color: rgb(215, 238, 5);
     border: 2px solid black;
-    border-radius: 9px;
+    border-radius: 15%;
     padding: 40px;
     gap: 4px;
     justify-content: center;
